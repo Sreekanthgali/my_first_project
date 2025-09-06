@@ -17,12 +17,12 @@ class Cart:
       total_price+=quantity*self.price_details[item]
     return total_price
 cart_obj=Cart()
-cart_obj.add_item(book,10)
-cart_obj.add_item(laptop,1)
+cart_obj.add_item("book",10)
+cart_obj.add_item("laptop",1)
 print(cart_obj.get_total_price())
-cart_obj.update_quantity(book,5)
+cart_obj.update_quantity("book",5)
 print(cart_obj.get_cartitems())
-cart_obj.remove_item(laptop)
+cart_obj.remove_item("laptop")
 print(cart_obj.get_cartitems())
   
     
