@@ -7,7 +7,7 @@ class Cart:
   def remove_item(self,item_name):
     del self.items[item_name]
   def update_quantity(self,item_name,quantity):
-    self.items[item_name]=qantity
+    self.items[item_name]=quantity
   def get_cartitems(self):
     cart_items=list(self.items.keys())
     return cart_items
